@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.location1.MainActivity">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Find Location"
+        android:layout_marginLeft="155dp"
+        android:onClick="findLoc"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/button"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@+id/textView3"
+        android:id="@+id/scview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Gender" />
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText7"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Height" />
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText8"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Weight" />
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText9"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Colour Complexion"/>
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText10"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Edu. Qualification" />
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText11"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Designation" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText12"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Paper Published"/>
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText13"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Admin Responsibility" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scview"
+        android:layout_marginLeft="150dp"
+        android:text="Add"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:onClick="addData"/>
+
+</RelativeLayout>
